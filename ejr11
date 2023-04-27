@@ -1,0 +1,29 @@
+// 11. Ingresar las horas trabajadas por un empleado y su categoría,
+// calcular su sueldo sabiendo que los empleados de la categoría 1 cobran $50, la 2 cobra $ 70 y la 3 cobra $ 80
+
+Console.WriteLine("Ingresar las horas trabajadas por el operario: ");
+int ch = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingresar la categoria del operario: ");
+int cat = int.Parse(Console.ReadLine());
+
+int vh = 0;
+
+if (cat == 1)
+{
+    vh += 50;
+}
+
+if (cat == 2)
+{
+    vh += 70;
+}
+
+if (cat == 3)
+{
+    vh += 80;
+}
+
+int sueldo = vh * ch;
+
+Console.WriteLine("el sueldo del operario es de: " + sueldo);
