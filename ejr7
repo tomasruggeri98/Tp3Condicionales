@@ -1,0 +1,23 @@
+// 7. Ingresar el valor de la hora y el tiempo trabajado por un empleado,
+// calcular su sueldo conociendo que recibe un premio de $ 100 si trabajo más de 50 hs
+// y si trabajo más de 150 hs le dan otros $ 100 adicionales. Imprimir el sueldo
+
+Console.WriteLine("ingresar valor en pesos de paga por hora: ");
+float vh = float.Parse(Console.ReadLine());
+
+Console.WriteLine("ingresar la cantidad de horas trabajada por el operario: ");
+float ch = float.Parse(Console.ReadLine());
+
+float sueldo = vh * ch;
+
+if (ch > 50)
+{
+    sueldo += 100;
+}
+
+if (ch > 150)
+{
+    sueldo += 100;
+}
+
+Console.WriteLine("el sueldo del operario es de: " + sueldo);
