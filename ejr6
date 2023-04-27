@@ -1,0 +1,23 @@
+// 6. Ingresar la edad y la altura de dos personas, indicar e imprimir la estatura del de mayor edad.
+
+Console.WriteLine("Ingresar la edad de la primer persona: ");
+int edad1 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingresar la altura en centímetros de la primer persona: ");
+int altura1 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingresar la edad de la segunda persona: ");
+int edad2 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingresar la altura en centímetros de la segunda persona: ");
+int altura2 = int.Parse(Console.ReadLine());
+
+
+if (edad1 > edad2)
+{
+    Console.WriteLine("la estatura del individio con mayor edad es de " + altura1 + " centímetros");
+}
+else
+{
+    Console.WriteLine("la estatura del individio con mayor edad es de " + altura2 + " centímetros");
+}
