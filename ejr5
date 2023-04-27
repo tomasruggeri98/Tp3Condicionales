@@ -1,0 +1,25 @@
+// 5. Ingresar cuatro valores, sumar el 1ro y el 2do, el 3ro y el 4to, indicar e imprimir cuál de estas sumas es mayor
+
+Console.WriteLine("Ingresar valor1: ");
+int v1 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingresar valor2: ");
+int v2 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingresar valor3: ");
+int v3 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingresar valor4: ");
+int v4 = int.Parse(Console.ReadLine());
+
+int s1 = v1 + v2;
+int s2 = v3 + v4;
+
+if (s1 > s2)
+{
+    Console.WriteLine("la suma1 de los valores 1&2 es mayor a la suma2 de los valores 3&4");
+}
+else
+{
+    Console.WriteLine("la suma2 de los valores 3&4 es mayor a la suma1 de los valores 1&2");
+}
