@@ -1,0 +1,15 @@
+// 1. Ingresar dos valores, indicar e imprimir si son iguales
+Console.WriteLine("Ingrese un valor:");
+int v1 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingrese otro valor:");
+int v2 = int.Parse(Console.ReadLine());
+
+if (v1 == v2){
+    Console.WriteLine("los valores son iguales");
+}
+else
+{
+    Console.WriteLine("los valores son distintos");
+}
+
