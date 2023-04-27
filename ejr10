@@ -1,0 +1,17 @@
+// 10. Sobre los datos del ejercicio anterior imprimir los sueldos de los empleados con más de 5 años de antigüedad
+
+Console.WriteLine("Ingresar el sueldo del operario: ");
+int sueldo = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingresar la categoria del operario: ");
+int cat = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingresar el antigüedad del operario: ");
+int ant = int.Parse(Console.ReadLine());
+
+
+if (cat == 1 && ant >= 5)
+{
+    sueldo += ant * 50;
+    Console.WriteLine("el sueldo del operario es: " + sueldo);
+}
