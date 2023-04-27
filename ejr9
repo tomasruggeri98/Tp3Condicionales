@@ -1,0 +1,20 @@
+// 9. Ingresar el sueldo, categoría y antigüedad de un empleado,
+// calcular el sueldo final de cada uno de ellos,
+// si el empleado es de la categoría 1 se le adicionara $50 por cada año de antigüedad.
+
+Console.WriteLine("Ingresar el sueldo del operario: ");
+int sueldo = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingresar la categoria del operario: ");
+int cat = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingresar el antigüedad del operario: ");
+int ant = int.Parse(Console.ReadLine());
+
+
+if (cat == 1)
+{
+    sueldo += ant * 50;
+    Console.WriteLine("el sueldo del operario es: " + sueldo);
+}
+else Console.WriteLine("el sueldo del operario es: " + sueldo);
