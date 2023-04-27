@@ -1,0 +1,22 @@
+// 8. Ingresar tres valores correspondientes al día, mes y año de una fecha, indicar si es válida, considerar los años bisiestos
+
+Console.WriteLine("ingresar día de la fecha: ");
+int dia = int.Parse(Console.ReadLine());
+
+Console.WriteLine("ingresar mes de la fecha: ");
+int mes = int.Parse(Console.ReadLine());
+
+Console.WriteLine("ingresar año de la fecha: ");
+int año = int.Parse(Console.ReadLine());
+
+DateTime fecha = new DateTime(año, mes, dia);
+
+if (DateTime.IsLeapYear(año))
+{
+    Console.WriteLine("el año es bisiesto y la fecha" + fecha + " es valida" );
+}
+
+else
+{ 
+    Console.WriteLine("el año no es bisiesto y la fecha" + fecha + " es valida");
+}
